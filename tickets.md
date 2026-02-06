@@ -128,7 +128,7 @@
 ---
 
 ### Ticket #8: Create Pydantic Schemas for the Profile Resource
-- **Status**: Open
+- **Status**: Done
 - **Complexity**: Medium
 - **Blocked By**: Ticket #7
 - **System Design Lesson**: **Data Transfer Objects (DTOs) & API Contract Design** -- Your API response shape should NOT match your database schema. The DTO pattern gives you a translation layer between internal data and external API contract. Change your database? Update the translation. The API stays stable.
@@ -147,7 +147,7 @@
 ---
 
 ### Ticket #9: Implement the Profile Service Layer
-- **Status**: Open
+- **Status**: Done
 - **Complexity**: Medium
 - **Blocked By**: Ticket #8
 - **System Design Lesson**: **Service Layer Pattern & Dependency Injection** -- Route handlers should be "thin" (parse request, call service, return response). Services should be "fat" (contain logic, coordinate DB operations, enforce business rules). What if you later add a CLI tool that creates profiles for testing? With logic in routes, you'd duplicate code. With a service layer, the CLI calls the same service.
