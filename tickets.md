@@ -165,7 +165,7 @@
 ---
 
 ### Ticket #10: Create the Profile API Routes (CRUD Endpoints)
-- **Status**: Open
+- **Status**: Done
 - **Complexity**: Medium
 - **Blocked By**: Ticket #9
 - **System Design Lesson**: **RESTful Resource Design** -- Design your API around your domain, not your database tables. In Rally, you don't "create a profile" -- you complete YOUR profile. The `/me` endpoint is a common pattern for "the currently authenticated user's resource."
