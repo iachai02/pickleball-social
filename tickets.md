@@ -107,7 +107,7 @@
 ## MVP Foundation
 
 ### Ticket #7: Structure the FastAPI Backend with Clean Architecture
-- **Status**: Open
+- **Status**: Done
 - **Complexity**: Medium
 - **Blocked By**: Ticket #6
 - **System Design Lesson**: **Layered Architecture & Separation of Concerns** -- Why we separate code into layers (API, schemas, services, core). What happens if you put database queries directly in route handlers? What if you need that same query logic in two different endpoints?
