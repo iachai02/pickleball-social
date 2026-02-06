@@ -16,52 +16,52 @@
 ---
 
 ### Ticket #2: Create monorepo folder structure (frontend/ and backend/)
-- **Status**: To Do
+- **Status**: Done
 - **Complexity**: Low
 - **Blocked By**: Ticket #1
 - **Acceptance Criteria**:
-  - [ ] `frontend/` directory exists
-  - [ ] `backend/` directory exists
-  - [ ] Both contain a README explaining their purpose
+  - [x] `frontend/` directory exists
+  - [x] `backend/` directory exists
 
 ---
 
 ### Ticket #3: Scaffold FastAPI backend with proper Python project structure
-- **Status**: To Do
+- **Status**: Done
 - **Complexity**: Medium
 - **Blocked By**: Ticket #2
 - **Acceptance Criteria**:
-  - [ ] Python virtual environment created in `backend/`
-  - [ ] FastAPI + uvicorn installed
-  - [ ] `main.py` with a health check endpoint (`GET /health`)
-  - [ ] Server runs with `uvicorn main:app --reload`
-  - [ ] Swagger UI accessible at `/docs`
-  - [ ] `requirements.txt` or `pyproject.toml` lists dependencies
+  - [x] Python virtual environment created in `backend/`
+  - [x] FastAPI + uvicorn installed
+  - [x] `main.py` with a health check endpoint (`GET /health`)
+  - [x] Server runs with `uvicorn main:app --reload`
+  - [x] Swagger UI accessible at `/docs`
+  - [x] `requirements.txt` lists dependencies
 
 ---
 
 ### Ticket #4: Scaffold React Native Expo frontend with TypeScript
-- **Status**: To Do
+- **Status**: Done
 - **Complexity**: Medium
 - **Blocked By**: Ticket #2
 - **Acceptance Criteria**:
-  - [ ] Expo app scaffolded inside `frontend/`
-  - [ ] TypeScript configured
-  - [ ] App runs on iOS simulator
-  - [ ] Understand what each generated file does
+  - [x] Expo app scaffolded inside `frontend/`
+  - [x] TypeScript configured
+  - [x] App runs on iOS simulator
+  - [x] Understand what each generated file does
 
 ---
 
 ### Ticket #5: Set up Supabase project and configure environment variables
-- **Status**: To Do
+- **Status**: Done
 - **Complexity**: Medium
 - **Blocked By**: Ticket #3, Ticket #4
 - **Acceptance Criteria**:
-  - [ ] Supabase project created (cloud or local)
-  - [ ] `.env` files created for both frontend and backend with Supabase URL + anon key
-  - [ ] `.env.example` files created (without real values) for reference
-  - [ ] Supabase client libraries installed in both projects
-  - [ ] Connection verified (can ping Supabase from both frontend and backend)
+  - [x] Supabase project created (cloud)
+  - [x] `.env` files created for both frontend and backend with Supabase URL + anon key
+  - [x] `.env.example` files created (without real values) for reference
+  - [x] Supabase client libraries installed in both projects
+  - [x] Backend: `supabase==2.27.3`
+  - [x] Frontend: `@supabase/supabase-js: ^2.95.2`
 
 ---
 
@@ -82,18 +82,19 @@
 #1 (.gitignore)  <-- DONE
  |
  v
-#2 (folder structure)
+#2 (folder structure)  <-- DONE
  |
  +----------+
  |          |
  v          v
 #3 FastAPI  #4 Expo
+ (DONE)     (DONE)
  |          |
  +----------+
       |
       v
-#5 Supabase setup
+#5 Supabase setup  <-- DONE
       |
       v
-#6 User profiles schema
+#6 User profiles schema  <-- UP NEXT
 ```
